@@ -1,0 +1,115 @@
+@page {
+    size: auto; 
+    margin: 0mm; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 40px;
+}
+
+header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 3px solid black;
+}
+
+header h1 {
+    font-size: 18px;
+}
+
+.mb-1 {
+    margin-bottom: 5px;
+}
+
+header h1:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+main {
+    margin-top: 2px;
+    border-top: 1.5px solid black;
+    padding: 15px 50px;
+}
+
+p, td {
+    font-size: 14px;
+}
+
+.pembuka {
+    position: relative;
+    left: 80%;
+}
+
+.pembuka p {
+    margin-bottom: 2px;
+}
+
+.pembuka p:nth-child(1), .pembuka p:nth-child(6) {
+    margin-bottom: 13px;
+}
+
+.pembuka p:nth-child(7) {
+    margin-bottom: 0;
+}
+
+.isi h1, .nomor-surat {
+    text-align: center;
+}
+
+.isi h1 {
+    font-size: 18px;
+    text-decoration: underline;
+    margin-bottom: 3px;
+}
+
+.nomor-surat {
+    margin-bottom: 20px;
+}
+
+.indent {
+    text-indent: 20px;
+    margin-bottom: 10px;
+}
+
+table.data-warga {
+    margin-bottom: 10px;
+}
+
+.data-warga td, .data-surat td{
+    padding: 5px 0;
+}
+
+.mengetahui {
+    margin-top: 15px;
+}
+
+.mengetahui table {
+    width: 100%;
+}
+
+.mengetahui td {
+    padding: 2px 0;
+}
+
+.w-25 {
+    width: 25%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.mengetahui .tanda-tangan {
+    border-bottom: 1px solid black;
+}
+
+.mengetahui .nama {
+    text-align: center;
+    padding: 105px 0 0 0;
+}

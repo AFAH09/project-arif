@@ -1,0 +1,376 @@
+header {
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: flex;
+    align-items: center;
+    padding: 20px 25px;
+    background-color: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+header nav {
+    width: 80%;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.drop-down-content {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    right: 0;
+}
+
+.drop-down-content .options {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    border-radius: 3px;
+    width: 130px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-logout {
+    background-color: transparent !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: var(--color-dark-grey) !important;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    display: flex;
+}
+
+.red {
+    color: var(--color-red);
+}
+
+.contoh {
+    color: var(--color-grey);
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    color: var(--color-dark-grey);
+    cursor: pointer;
+}
+
+input {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-dark-grey);
+    border-radius: 3px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+textarea, select {
+    background-color: var(--color-white);
+    border-color: var(--color-dark-grey);
+}
+
+main {
+    padding: 11px 25px;
+}
+
+main nav {
+    margin-bottom: 5px;
+}
+
+main nav ul {
+    width: 30%;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+main nav li:nth-child(1) {
+    cursor: pointer;
+}
+
+main nav li:nth-child(even) {
+    color: rgb(27, 23, 23);
+}
+
+main nav .active {
+    font-weight: 600;
+    color: var(--color-blue);
+}
+
+.input-data-warga, .input-data-kelurahan {
+    display: none;
+    height: 81vh;
+    margin-top: 20px;
+}
+
+.pilih-surat {
+    height: 83vh;
+}
+
+.pilih-surat {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.pilih-surat button {
+    font-size: 16px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 15px 80px;
+    border-radius: 3px;
+    margin-top: -15vh;
+}
+
+.pilih-surat button:hover {
+    background-color: rgba(25, 118, 210, .8);
+}
+
+.form {
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 11px;
+    margin: 10px 30px 0;
+}
+
+.form div {
+    width: 25%;
+}
+
+input, textarea, select {
+    padding: 10px 15px;
+    width: 100%;
+    display: block;
+    margin-top: 3px;
+    font-family: 'Arial', sans-serif;
+}
+
+label {
+    font-size: 14px;
+}
+
+.buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+button.back {
+    background-color: var(--color-green) !important;
+}
+
+button:nth-last-child(1) {
+    margin-right: 0;
+}
+
+button.next {
+    margin-right: 0;
+}
+
+.confirm-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons .confirm {
+    box-sizing: content-box;
+    width: 400px;
+    padding: 30px;
+    background-color: var(--color-white);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+    position: relative;
+}
+
+.confirm .bxs-check-circle {
+    font-size: 70px;
+    margin-bottom: 10px;
+    color: var(--color-green);
+}
+
+.confirm .bx-x {
+    background-color: transparent;
+    padding: 0;
+    position: absolute;
+    font-size: 30px;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.confirm p {
+    font-size: 12px;
+    color: var(--color-yellow);
+}
+
+.confirm .action {
+    margin: 20px 0 25px;
+}
+
+.confirm .action button i {
+    margin-right: 5px;
+}
+
+.confirm button {
+    background-color: var(--color-blue);
+}
+
+.confirm button:nth-last-child(1) {
+    background-color: var(--color-blue);
+}
+
+#flashMessage {
+    position: fixed;
+    top: 75px;
+    right: 20px;
+    background-color: var(--color-red );
+    color: whitesmoke;
+    border-radius: 3px;
+    padding: 15px 25px;
+    transform: translateX(400px);
+}
+
+#flashMessage i {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.pop-up {
+    animation: popUp 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popUp {
+    10% {transform: translateX(0);}
+    30% {transform: translateX(0);}
+    70% {transform: translateX(2px);}
+    80% {transform: translateX(0px);}
+    85% {transform: translateX(5px);}
+    100% {transform: translateX(400px);}
+}
+
+@media screen and (max-width: 575px) {
+
+    main {
+        padding: 11px 20px;
+    }
+    
+    main nav ul {
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    
+    .input-data-warga {
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .form {
+        display: inherit;
+        margin: 20px 0;
+        height: inherit;
+    }
+
+    .form > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header.header {
+        position: inherit;
+    }
+
+    header .logo img {
+        width: 35px;
+    }
+    
+    header .logo h1 {
+        font-size: 18px;
+    }
+
+    header .logo p {
+        font-size: 13px;
+    }
+
+    .buttons .confirm {
+        width: 350px;
+    }
+
+    .buttons {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+    main nav ul {
+        width: 50%;
+    }
+
+    .input-data-warga {
+        height: fit-content;
+        margin-top: 20px;
+    }
+
+    .form {
+        display: inherit;
+        margin: 20px 0;
+        height: inherit;
+    }
+
+    .form > div {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    header.header {
+        position: inherit;
+    }
+}
+
+
+
