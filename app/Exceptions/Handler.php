@@ -8,9 +8,17 @@ use Throwable;
 class Handler extends ExceptionHandler
 {
     /**
+     * Undocumented variable
+     *
+     * @var array
+     */
+    protected $dontReport = [
+        //
+    ];
+    /**
      * The list of the inputs that are never flashed to the session on validation exceptions.
      *
-     * @var array<int, string>
+     * @var array
      */
     protected $dontFlash = [
         'current_password',
@@ -20,8 +28,9 @@ class Handler extends ExceptionHandler
 
     /**
      * Register the exception handling callbacks for the application.
+     * @return void
      */
-    public function register(): void
+    public function register()
     {
         $this->reportable(function (Throwable $e) {
             //
